@@ -310,7 +310,6 @@ footer{
 }
 
 
-/* Gallery immagini - Knowledge Organization */
 .image-gallery{
     display:flex;
     justify-content:center;
@@ -328,13 +327,6 @@ footer{
     margin-top:12px;
 }
 
-.image-preview{
-    width:260px;
-    aspect-ratio:1 / 1;
-    overflow:hidden;
-    border-radius:12px;
-    cursor:pointer;
-}
 
 .image-preview{
 
@@ -388,35 +380,6 @@ footer{
 
     opacity:1;
 
-}
-
-#imageModal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.92);
-    z-index:9999;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-}
-
-#modalImage{
-    max-width:85%;
-    max-height:85%;
-    transition:transform 0.15s ease;
-    cursor:zoom-in;
-    user-select:none;
-}
-
-#closeModal{
-    position:absolute;
-    top:25px;
-    right:40px;
-    font-size:50px;
-    color:#F5F5DC;
-    cursor:pointer;
-    z-index:10000;
 }
 
 body{
