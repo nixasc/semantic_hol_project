@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HoL Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+    <div class="header-image">
+
+        <img src="images/hol.jpg" alt="Header image">
+
+        <div class="header-fade"></div>
+
+    </div>
+
+    <div class="header-content">
+
+        <h1>Semantic <span class="house-word">House</span> of Leaves: A DH Project</h1>
+
+    </div>
+
+</header>
+
+    <nav class="section-nav">
+        <a href="#overview">Overview</a>
+        <a href="#domain-analysis">Domain Analysis</a>
+        <a href="#knowledge-organization">Knowledge Organization</a>
+        <a href="#knowledge-representation">Knowledge Representation</a>
+        <a href="#project-files">Project Files</a>
+    </nav>
+
+    <main>
+
+        <section id="overview" class="section-box">
+            <h2>Overview</h2>
+            <p>
+                Developed for the course <i>Information Science and Cultural Heritage</i> at the University of Bologna, this project explores the experimental novel <span class="house-word">House</span> of Leaves, by Mark Z. Danielewski, using Digital Humanities technologies. 
+            </p>
+            <p>
+                The starting point is <span class="house-word">House</span> of Leaves' Wikipedia article: relevant entities and their relations were extracted and represented in a theoretical model and then in a conceptual one. Some selected sections (namely the introdcution, "Companion Works", and "Legacy") were then annotated using TEI encoding. The project then focused on Knowledge Representation, transforming the TEI encoding into an HTML file and creating a small RDF dataset.
+            </p>
+            <a class="placeholder-link" href="https://en.wikipedia.org/wiki/House_of_Leaves">View the Wikipedia article</a>
+        </section>
+
+        <section id="domain-analysis" class="section-box">
+            <h2>Domain Analysis</h2>
+            <p>
+                <span class="house-word">House</span> of Leaves is a groundbreaking, experimental novel by author Mark Z. Danielewski, focusing on a report about a labyrinthine, shifting <span class="house-word">house</span> and the family that inhabits it. The book combines an academic writing style, psychological horror and a convoluted layout that often forces readers to engage physically with the book, for instance by turning the book to read an upside-down chapter, or by reading through its reflection on a mirror. Its innovative storytelling and intricate narrative, along with its multiple layers of narration and characters, have made it a staple of the horror genre.
+            </p>
+            <p>
+                Its influence can be found in many recent works, spanning all forms of media: from films to other books, and even to custom video game maps, the book has influenced, whether consciously or not, a huge part of the horror landscape of the last two decades.
+            </p>
+            <p>
+                In order to mirror the vastness of the work, the project tried to vary as much as possible in selecting the entities, without being limited to the more direct relations to the book. Some of the selected entities include:
+            </p>
+            <ul>
+                <li>Mark Z. Danielewski: the author of <span class="house-word">House</span> of Leaves and its companion work, The Whalestoe Letters.</li>
+                <li>Haunted: an album directly influenced by the book, by the author's sister</li>
+                <li>The Whalestoe Letters: a small companion book to the main one</li>
+                <li>Backrooms: a successful video series published on the web, born from an online post</li>
+                <li>MyHouse.wad: a mod for the video game Doom II, focused on a shifting <span class="house-word">house</span></li>
+            </ul>
+        </section>
+
+        <section id="knowledge-organization" class="section-box">
+            <h2>Knowledge Organization</h2>
+            <p>
+                The Knowledge Organization section required to illustrate the relations between the entities with a theoretical model and a concpetual one. 
+            </p>
+            <div class="image-gallery">
+
+                <div class="image-item">
+                    <div class="image-preview">
+                        <img src="images/theoretical.jpg" alt="Theoretical map" onclick="openImage(this.src)">
+                    </div>
+                     <p>The theoretical model is a natural language representation of the selected entities and their relations.
+                    </p>
+                </div>
+
+            <div class="image-item">
+                <div class="image-preview">
+                    <img src="images/conceptual.jpg" alt="Conceptual map" onclick="openImage(this.src)">
+                </div>
+                <p>The conceptual model reuses existing ontologies to map in a formal way the entities and their relations. Some of the reused ontologies include: FOAF, SKOS, CRM.</p>
+            </div>
+
+            </div>
+        </section>
+
+        <section id="knowledge-representation" class="section-box">
+            <h2>Knowledge Representation</h2>
+            <p>
+                In the Knowledge Representation phase, selected sections of the original Wikipedia article were annotated using TEI encoding. The document is encoded with semantic markup for persons, bibliography, places, organizations, dates, and concepts.
+            </p>
+            <p>
+                Afterwards, the TEI-encoded XML document is transformed into a readable HTML page using an XSLT stylesheet. This allows the user to visualize the annotated text and browse the identified entities in a more accessible way. Links to Wikidata were also provided to match the entities.
+            </p>
+            <p>
+                Lastly, a Python script was developed to automatically convert the semantic relationships defined in the TEI file into a small RDF dataset expressed in Turtle format. This process enables the representation of the domain as Linked Open Data and ensures interoperability.
+            </p>
+            <a class="placeholder-link" href="https://github.com/nixasc/semantic_hol_project/blob/main/hol_tei.xml">View TEI encoding</a>
+            <a class="placeholder-link" href="https://github.com/nixasc/semantic_hol_project/blob/main/hol_output.html">View HTML transformation</a>
+            <a class="placeholder-link" href="https://github.com/nixasc/semantic_hol_project/blob/main/dataset.ttl">View RDF dataset</a>
+        </section>
+
+        <section id="project-files" class="section-box">
+            <h2>Project Files</h2>
+            <p>
+                All the files related to this project can be viewed together in the Github repository:
+            </p>
+            <a class="placeholder-link" href="https://github.com/nixasc/semantic_hol_project">View Github</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Final project for the course Information Science and Cultural Heritage, A.Y. 2025/2026 within the Masters' Degree Digital Humanities and Digital Knowledge at Alma Mater Studiorum in Bologna.</p>
+    </footer>
+
+<div id="imageModal">
+    <span id="closeModal">&times;</span>
+    <img id="modalImage" src="" alt="Expanded image">
+</div>
+ <script src="javascript.js"></script>
+</body>
+</html>
