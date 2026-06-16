@@ -379,8 +379,18 @@ footer{
 .image-preview:hover::after{
 
     opacity:1;
-
 }
+
+.modal img,
+.overlay img,
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
 
 body{
     font-size:21px;
