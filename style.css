@@ -437,6 +437,30 @@ body{
     font-size:1.1rem;
 }
 
+.expanded-image,
+.expandedImage,
+#expanded-image,
+#expandedImage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    z-index: 9999;
+    background: #171717;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .house-word,
 .house-blue{
     color:#6ca8ff !important;
