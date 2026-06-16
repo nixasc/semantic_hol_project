@@ -1,0 +1,60 @@
+@prefix : <https://nicolettaascione.github.io/lodlam/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+:control crm:P15_was_influenced_by :house_of_leaves ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q54935655> .
+
+:labyrinth crm:P129_is_about :house_of_leaves ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q48963> .
+
+:myhouse_wad owl:sameAs <https://www.wikidata.org/wiki/Q118558689> ;
+    skos:broader :doom_ii ;
+    schema:isBasedOn :house_of_leaves .
+
+:pantheon_books dct:publisher :house_of_leaves ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q520387> .
+
+:zampano crm:P67_refers_to :the_navidson_record .
+
+:backrooms owl:sameAs <https://www.wikidata.org/wiki/Q125131315> ;
+    schema:director :kane_parsons .
+
+:doom_ii owl:sameAs <https://www.wikidata.org/wiki/Q755186> .
+
+:ergodic_literature owl:sameAs <https://www.wikidata.org/wiki/Q5385815> .
+
+:footnotes crm:P14_carried_out_by :johnny_truant ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q25424643> .
+
+:haunted dct:creator :poe ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q16842213> .
+
+:horror_fiction owl:sameAs <https://www.wikidata.org/wiki/Q16575965> .
+
+:kane_parsons owl:sameAs <https://www.wikidata.org/wiki/Q111653356> .
+
+:poe owl:sameAs <https://www.wikidata.org/wiki/Q535762> ;
+    schema:sibling :mark_z_danielewski .
+
+:the_navidson_record crm:P5_consists_of :house_of_leaves ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q118352515> .
+
+:the_whalestoe_letters dct:creator :mark_z_danielewski ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q7774363> .
+
+:mark_z_danielewski owl:sameAs <https://www.wikidata.org/wiki/Q963727> .
+
+:house_of_leaves dct:creator :mark_z_danielewski ;
+    dct:hasPart :footnotes ;
+    dct:isReferencedBy :haunted ;
+    dct:relation :the_whalestoe_letters ;
+    crm:P2_has_type :ergodic_literature ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q521688> ;
+    skos:related :backrooms ;
+    schema:character :johnny_truant ;
+    schema:genre :horror_fiction .
+

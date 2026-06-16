@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hol_tei.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+    <teiHeader>
+
+        <fileDesc>
+
+            <titleStmt>
+                <title>House of Leaves: A LOD Project</title>
+                <author>Mark Z. Danielewski</author>
+            </titleStmt>
+
+            <respStmt>
+                <resp>annotated by</resp>
+                <persName>Nicoletta Ascione</persName>
+            </respStmt>
+
+            <publicationStmt>
+                <publisher>University of Bologna</publisher>
+                <pubPlace>Bologna, Italy</pubPlace>
+                <date when="2026">2026</date>
+                <availability>
+                <licence target="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY</licence>
+                </availability>
+            </publicationStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <title level="a">House of Leaves</title>
+                    <publisher>Wikimedia Foundation</publisher>
+                    <ptr target="https://en.wikipedia.org/wiki/House_of_Leaves"/>
+                </bibl>
+            </sourceDesc>
+
+        </fileDesc>
+
+
+            <profileDesc>
+                <particDesc>
+
+                    <listPerson>
+                        <person xml:id="mark_z_danielewski" sameAs="https://www.wikidata.org/wiki/Q963727">
+                              <persName type="full">Mark Z. Danielewski</persName>
+                              <persName type="surname">Danielewski</persName>
+                        </person>
+
+                        <person xml:id="poe" sameAs="https://www.wikidata.org/wiki/Q535762">
+                            <persName type="pseudonym">Poe</persName>
+                            <persName type="birthName">Anne Danielewski</persName>
+                        </person>
+
+                        <person xml:id="kane_parsons" sameAs="https://www.wikidata.org/wiki/Q111653356">
+                              <persName>Kane Parsons</persName>
+                        </person>
+
+                        <person xml:id="johnny_truant" type="fictional">
+                            <persName type="full">Johnny Truant</persName>
+                            <persName type="surname">Truant</persName>
+                            <note type="editorial">No Wikidata authority record identified.</note>
+                        </person>
+
+                        <person xml:id="zampano" type="fictional">
+                        <persName>Zampanò</persName>
+                            <note type="editorial">No Wikidata authority record identified.</note>
+                        </person>
+                    </listPerson>
+
+                    <listBibl>
+                        <bibl xml:id="house_of_leaves" sameAs="https://www.wikidata.org/wiki/Q521688">
+                            <bibl type="book">House of Leaves</bibl>
+                        </bibl>
+
+                        <bibl xml:id="the_whalestoe_letters" sameAs="https://www.wikidata.org/wiki/Q7774363">
+                            <bibl type="book">The Whalestoe Letters</bibl>
+                        </bibl>
+
+                        <bibl xml:id="haunted" sameAs="https://www.wikidata.org/wiki/Q16842213">
+                            <bibl type="record">Haunted</bibl>
+                        </bibl>
+
+                        <bibl xml:id="backrooms" sameAs="https://www.wikidata.org/wiki/Q125131315">
+                            <bibl type="web series">Backrooms</bibl>
+                        </bibl>
+
+                        <bibl xml:id="control" sameAs="https://www.wikidata.org/wiki/Q54935655">
+                            <bibl type="video game">Control</bibl>
+                        </bibl>
+
+                        <bibl xml:id="doom_ii" sameAs="https://www.wikidata.org/wiki/Q755186">
+                            <bibl type="video game">Doom II</bibl>
+                        </bibl>
+
+                        <bibl xml:id="myhouse_wad" sameAs="https://www.wikidata.org/wiki/Q118558689">
+                            <bibl type="video game mod">MyHouse.wad</bibl>
+                        </bibl>
+
+                        <bibl xml:id="the_navidson_record" sameAs="https://www.wikidata.org/wiki/Q118352515">
+                            <bibl type="fictional documentary">The Navidson Record</bibl>
+                        </bibl>
+                    </listBibl>
+
+                    <listPlace>
+                        <place xml:id="labyrinth" sameAs="https://www.wikidata.org/wiki/Q48963">
+                            <placeName>Labyrinth</placeName>
+                        </place>
+                    </listPlace>
+
+                    <list type="concept">
+                        <item xml:id="ergodic_literature" sameAs="https://www.wikidata.org/wiki/Q5385815">
+                            <term type="literary genre">Ergodic Literature</term>
+                        </item>
+
+                        <item xml:id="horror_fiction" sameAs="https://www.wikidata.org/wiki/Q16575965">
+                            <term type="literary genre">Horror</term>
+                        </item>
+
+                        <item xml:id="footnotes" sameAs="https://www.wikidata.org/wiki/Q25424643">
+                            <term type="footnote_concept">Footnotes</term>
+                        </item>
+                    </list>
+
+                    <listOrg>
+                        <org xml:id="pantheon_books" sameAs="https://www.wikidata.org/wiki/Q520387">
+                            <orgName>Pantheon Books</orgName>
+                        </org>
+                    </listOrg>
+        
+                    <listRelation>
+                        <relation active="#house_of_leaves" name="dct:relation" passive="#the_whalestoe_letters"/>
+                        <relation active="#house_of_leaves" name="dct:isReferencedBy" passive="#haunted"/>
+                        <relation active="#house_of_leaves" name="schema:genre" passive="#horror_fiction"/>
+                        <relation active="#house_of_leaves" name="crm:P2_has_type" passive="#ergodic_literature"/>
+                        <relation active="#house_of_leaves" name="skos:related" passive="#backrooms"/>
+                        <relation active="#house_of_leaves" name="dct:hasPart" passive="#footnotes"/>
+                        <relation active="#house_of_leaves" name="dct:creator" passive="#mark_z_danielewski"/>
+                        <relation active="#house_of_leaves" name="schema:character" passive="#johnny_truant"/>
+                        <relation active="#the_whalestoe_letters" name="dct:creator" passive="#mark_z_danielewski"/>
+                        <relation active="#labyrinth" name="crm:P129_is_about" passive="#house_of_leaves"/>
+                        <relation active="#the_navidson_record" name="crm:P5_consists_of" passive="#house_of_leaves"/>
+                        <relation active="#poe" name="schema:sibling" passive="#mark_z_danielewski"/>
+                        <relation active="#haunted" name="dct:creator" passive="#poe"/>
+                        <relation active="#pantheon_books" name="dct:publisher" passive="#house_of_leaves"/>
+                        <relation active="#backrooms" name="schema:director" passive="#kane_parsons"/>
+                        <relation active="#control" name="crm:P15_was_influenced_by" passive="#house_of_leaves"/>
+                        <relation active="#zampano" name="crm:P67_refers_to" passive="#the_navidson_record"/>
+                        <relation active="#footnotes" name="crm:P14_carried_out_by" passive="#johnny_truant"/>
+                        <relation active="#myhouse_wad" name="schema:isBasedOn" passive="#house_of_leaves"/>
+                        <relation active="#myhouse_wad" name="skos:broader" passive="#doom_ii"/>
+                    </listRelation>
+
+                </particDesc>
+            </profileDesc>
+
+    
+    </teiHeader>
+
+    <text xml:lang="en">
+
+        <body>
+            <div type="section" xml:id="intro">
+                <head rend="bold">House of Leaves</head>
+                <p>
+                <bibl ref="#house_of_leaves">House of Leaves</bibl> (stylized with "House" in blue) is the debut novel by American author <persName ref="#mark_z_danielewski">Mark Z. Danielewski</persName>, published in <date when="2000-03">March 2000</date> by <orgName ref="#pantheon_books">Pantheon Books</orgName>. A bestseller, it has been translated into a number of languages, and is followed by a companion piece, <bibl ref="#the_whalestoe_letters">The Whalestoe Letters</bibl>.
+                </p>
+                <p>
+                The novel is written as a work of epistolary fiction and metafiction focusing on a fictional documentary film titled <bibl ref="#the_navidsonz_record">The Navidson Record</bibl>, presented as a story within a story discussed in a handwritten monograph recovered by the primary narrator, <persName ref="#johnny_truant">Johnny Truant</persName>. The narrative makes heavy use of multiperspectivity as <persName ref="#johnny_truant">Truant</persName>'s <term ref="#footnotes">footnotes</term> chronicle his efforts to transcribe the manuscript which itself reveals <bibl ref="#the_navidson_record">The Navidson Record</bibl>'s supposed narrative through transcriptions and analysis depicting a story of a family who discovers a larger-on-the-inside <place ref="#labyrinth">labyrinth</place> in their house.
+                </p>
+                <p>
+                <bibl ref="#house_of_leaves">House of Leaves</bibl> maintains an academic publishing format throughout with exhibits, appendices, and an index, as well as numerous <term ref="#footnotes">footnotes</term> including citations for nonexistent works, interjections from the narrator, and notes from the editors to whom he supposedly sent to work for publication. It is also distinguished by convoluted page layouts: some pages contain only a few words or lines of text, arranged to mirror the events in the story, often creating both an agoraphobic and a claustrophobic effect. At points, the book must be rotated to be read, making it a prime example of <term ref="#ergodic_literature">ergodic literature</term>.
+                </p>
+                <p>
+                The book is most often described as a <term ref="#horror_fiction">horror</term> story, though the author has also endorsed readers' interpretation of it as a love story. <bibl ref="#house_of_leaves">House of Leaves</bibl> has also been described as an encyclopedic novel, or conversely a satire of academia.
+                </p>
+            </div>
+
+            <div type="section" xml:id="companion_works">
+                <head rend="bold">Companion works</head>
+                <p>
+                The book was followed by a companion piece called <bibl ref="#the_whalestoe_letters">The Whalestoe Letters</bibl>, a series of letters written to the character <persName ref="#johnny_truant">Johnny Truant</persName> by his mother while she was confined in a mental institution. Some (but not all) of the letters are included in the second edition.
+                </p>
+                <p>
+                <bibl ref="#house_of_leaves">House of Leaves</bibl> was accompanied by a companion piece (or vice versa), a full-length album called Haunted recorded by <persName ref="#mark_z_danielewski">Danielewski</persName>'s sister, <persName ref="#poe">Anne Danielewski</persName>, known professionally as <persName ref="#poe">Poe</persName>. The two works cross-pollinated heavily over the course of their creations, each inspiring the other in various ways. <persName ref="#poe">Poe</persName>'s statement on the connection between the two works is that they are parallax views of the same story. <bibl ref="#house_of_leaves">House of Leaves</bibl> refers to <persName ref="#poe">Poe</persName> and her songs several times, not only limited to her album <bibl ref="#haunted">Haunted</bibl>, but Hello as well. One example occurs when the character Karen Green is interviewing various academics on their interpretations of the short film "Exploration #4"; she consults a "Poet," but there is a space between the "Poe" and the "t," suggesting that <persName ref="#poe">Poe</persName> at one point commented on the book. It may also be a reference to Edgar Allan Poe.
+                </p>
+                <p>
+                The album <bibl ref="#haunted">Haunted</bibl> also draws heavily from the novel, featuring tracks called "House of Leaves", "Exploration B" and "5and½ Minute Hallway", and many less obvious references. The video for "Hey Pretty" also features <persName ref="#mark_z_danielewski">Mark Z. Danielewski</persName> reading from <bibl ref="#house_of_leaves">House of Leaves</bibl> (pp. 88 to 89), and in <bibl ref="#house_of_leaves">House of Leaves</bibl>, the band Liberty Bell's lyrics were also songs on <persName ref="#poe">Poe</persName>'s album.
+                </p>
+                In <date when="2017">2017</date>, <persName ref="#mark_z_danielewski">Mark Z. Danielewski</persName> entered talks to adapt the novel into a TV series, stating that if a deal was not made by <date when="2020-02">February 2020</date>, the project would be abandoned. On <date when="2018-06-18">June 18, 2018</date>, <persName ref="#mark_z_danielewski">Danielewski</persName> released the TV pilot script in the <bibl ref="#house_of_leaves">House of Leaves</bibl> book club on Facebook. Ultimately, <persName ref="#mark_z_danielewski">Mark Z. Danielewski</persName> published screenplays of three episodes online.
+                <p>
+                A sequel to the book, the screenplays both adapt the original story and extend it to the present day. Past sequences, depicted as filmed by a then-young filmmaker named Mélisande Avignon, contradict the book significantly: <persName ref="#zampano">Zampanò</persName>'s work, found by <persName ref="#johnny_truant">Truant</persName>, was not a manuscript but the actual film footage of <bibl ref="#the_navidson_record">The Navidson Record</bibl>. This and Avignon's film are later seized, and public knowledge of them suppressed, by a "data disposal" company called Skiadyne. In the present, unknown forces steal both films from Skiadyne and return them to Avignon, leading to a high-stakes fight for control. The book <bibl ref="#house_of_leaves">House of Leaves</bibl>, now academically studied as a work of fiction, becomes embroiled in a "fake fiction" scandal when Avignon publicizes its factual basis by leaking the films.
+                </p>
+            </div>
+            
+            <div type="section" xml:id="legacy">
+                <head rend="bold">Legacy</head>
+                <p>
+                Writing for Bloody Disgusting, critic Luis H.C. said that <bibl ref="#house_of_leaves">House of Leaves</bibl> "redefined modern <term ref="#horror_fiction">horror</term>", citing its influence in the found footage film genre; even before publication the book was the subject of frequent online discussion, and likely served as a source of inspiration for Daniel Myrick and Eduardo Sánchez in their creation of The Blair Witch Project, which released a year prior to <bibl ref="#house_of_leaves">House of Leaves</bibl>. Luis H.C. also cited the book's influence in films such as YellowBrickRoad, Grave Encounters and Skinamarink, online <term ref="#horror_fiction">horror</term> stories such as Ted the Caver and Dionaea House, collaborative online creepypastas such as the Backrooms, the SCP Foundation, and Slender Man, and video games such as Alan Wake and <bibl ref="#control">Control</bibl>. He further wrote that concepts pioneered in the novel have become ubiquitous in <date notBefore="2001" notAfter="2100">21st-century</date> <term ref="#horror_fiction">horror</term> to the point that many works, such as the web series <bibl ref="#backrooms">Backrooms</bibl> by <persName ref="#kane_parsons">Kane Parsons</persName>, share many similarities with <bibl ref="#house_of_leaves">House of Leaves</bibl> even if the creators may not have actually read the book itself. Other works cited as being indirectly influenced by the book include films like Monster House, You Should Have Left, and Dave Made a Maze.
+                </p>
+                <p>
+                <bibl ref="#house_of_leaves">House of Leaves</bibl> served as one of the prime inspirations for <bibl ref="#myhouse_wad">MyHouse.wad</bibl>, a <bibl ref="#doom_ii">Doom II</bibl> mod revolving around a house that is constantly shifting and changing in unsettling ways, making frequent use of impossible spaces. The mod was released in <date when="2023-03">March 2023</date>. Critic Jacob Geller posited the book as an inspiration behind the video games Anatomy and <bibl ref="#control">Control</bibl>, citing its reimagining of an innocuous family home as an ancient, malicious entity. Critic Terry Mesnard noted that the <date when="2020">2020</date> horror film You Should Have Left seemingly took heavy inspiration from <bibl ref="#house_of_leaves">House of Leaves</bibl>.
+                </p>
+            </div>
+
+        </body>
+    </text>
+
+
+
+</TEI>
