@@ -456,6 +456,36 @@ body{
     background: #171717;
 }
 
+#imageModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.88);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#modalImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  cursor: zoom-in;
+}
+
+#closeModal {
+  position: fixed;
+  top: 20px;
+  right: 35px;
+  z-index: 10000;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+}
+
 img {
     max-width: 100%;
     height: auto;
