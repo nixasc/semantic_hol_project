@@ -7,7 +7,7 @@ OUTPUT_FILE = "dataset.ttl"
 
 NS = {"tei": "http://www.tei-c.org/ns/1.0"}
 
-BASE = Namespace("https://nixasc.github.io/hol_project/")
+BASE = Namespace("https://nixasc.github.io/semantic_hol_project/")
 
 DCT = Namespace("http://purl.org/dc/terms/")
 SCHEMA = Namespace("https://schema.org/")
